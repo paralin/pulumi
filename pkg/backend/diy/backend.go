@@ -200,7 +200,7 @@ const FilePathPrefix = "file://"
 // New constructs a new diy backend,
 // using the given URL as the root for storage.
 // The URL must use one of the schemes supported by the go-cloud blob package.
-// Thes inclue: file, s3, gs, azblob.
+// These include: file, s3, gs, azblob.
 func New(ctx context.Context, d diag.Sink, originalURL string, project *workspace.Project) (Backend, error) {
 	return newDIYBackend(ctx, d, originalURL, project, nil)
 }
